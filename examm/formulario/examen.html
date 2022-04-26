@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+	</script>
+  <![endif]-->
+</head>
+<body>
+
+	<form id="registro" method="post">
+		<h1>Datos personales</h1>
+		<hr size="3px" color="white">
+		<ul>
+			<li>
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" autofocus required>
+			</li>
+			<br>
+			<li>
+				<label for="Apellidos">Apellidos:</label>
+				<input type="text" size="50" id="apellidos" name="apellidos">
+			</li>
+			<br>
+			<li>
+				<label for="Direccion">Dirección:</label>
+				<input type="text" size="50" id="direccion" name="direccion">
+			</li>
+			<br>
+			<li>
+				<label for="Poblacion">Población:</label>
+				<input type="text" id="text" name="text" >
+			</li>
+			<br>
+			<li>
+				<label for="provincia">Provincia:</label>
+				<input type="text" id="provincia" name="provincia">
+			</li>
+			<br>
+			<li>
+				<label for="codigo"> Código postal:</label>
+				<input type="text" id="codigo" name="codigo">
+			</li>
+			<br>
+			<li>
+				<label for="usuario">Usuario:</label>
+				<input type="text" id="usuario" name="usuario" >
+				<h6>* Máximo 10 carácteres</h6>
+			</li>
+			
+			<li>
+				<label for="contraseña">Contraseña:</label>
+				<input type="text" id="contraseña" name="contraseña" required pattern="\S{7,}" >
+				<h6>* Máximo 10 carácteres</h6>
+			</li>
+				
+			<li>
+				<button id="registro-submit" type="submit">Enviar</button>
+			</li>
+		</ul>
+	</form>
+	
+	
+
+<script src="scripts/registro.js"></script>
+</body>
+
+
+</html>

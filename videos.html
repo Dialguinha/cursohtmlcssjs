@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Curso de HTML5 y CSS3</title>
+	<meta name="description" content="HTML5, CSS3">
+	<meta name="author" content="Alejandro Amat">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="../Práctica_html_css_2/scripts/reproductor.js"></script>
+	<!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+ </script>
+<![endif]-->
+</head>
+
+<body>
+
+	<div id="page">
+
+		<header>
+
+			<h1> <img src="../Práctica_html_css_2/logo.png"> Curso de HTML5 y CSS3 </h1>
+
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Contenidos</a></li>
+				<li><a href="#">Vídeos</a>
+					<ul>
+						<li><a href="serpiente.html">Serpiente</a></li>
+						<li><a href="#">Vídeo 2</a></li>
+						<li><a href="#">Vídeo 3</a></li>
+					</ul>
+				</li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+
+		<main>
+
+
+			<div id="reproductor">
+				<video id="medio" width="720" height="400">
+					<source src="../Práctica_html_css_2/trailer.mp4">
+					<source src="../Práctica_html_css_2/trailer.ogg">
+				</video>
+				<div id="barra">
+					<div id="progreso"></div>
+				</div>
+			</div>
+
+			<nav>
+				<input type="button" id="reiniciar" value="reiniciar">
+				<input type="button" id="retrasar" value="&laquo;">
+				<input type="button" id="play" value="&#9658;">
+				<input type="button" id="adelantar" value="&raquo;">
+				<input type="button" id="silenciar" value="silenciar">
+				<label>Volumen</label>
+				<input type="button" id="menosVolumen" value="-">
+				<input type="button" id="masVolumen" value="+">
+			</nav>
+
+		</main> <!-- content -->
+
+		<footer>
+			<p>Alejandro Amat Reina © 2014. Curso de HTML5 y CSS3.</p>
+			<p>Impartido para: <a href="http://cefire.edu.gva.es"> CEFIRE - Específico de Formación Profesional</a></p>
+		</footer>
+
+	</div> <!-- page -->
+
+</body>
+
+<script type="text/javascript">
+
+	const articlesImages = document.querySelectorAll('article > header > img')
+	const images = ['imgs/html5.png', 'imgs/css3.png', 'imgs/javascript.png']
+	Array.from(articlesImages).forEach((img, index) => {
+		img.src = images[index]
+	})
+</script>
+
+
+</html>
